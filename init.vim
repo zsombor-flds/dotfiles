@@ -10,14 +10,15 @@ Plug 'scrooloose/nerdtree'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'phanviet/vim-monokai-pro'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'vimlab/split-term.vim'
 call plug#end()
 
 " Enable deoplete ( python auto completion)
 let g:deoplete#enable_at_startup = 1
 
 " Auto close deoplete completion window
-autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
-
+"autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " Enable relative line number
 set number relativenumber
 
@@ -30,6 +31,7 @@ set mouse=a
 syntax enable
 colorscheme monokai
 
+" idk:"
 nnoremap <A-j> :m .+1<CR>==
 nnoremap <A-k> :m .-2<CR>==
 inoremap <A-j> <Esc>:m .+1<CR>==gi
@@ -55,8 +57,10 @@ let g:NERDTreeIndicatorMapCustom = {
     \ "Unknown"   : "?"
     \ }
 
-au VimEnter *  NERDTree
-
+"au VimEnter *  NERDTree
+" C-t to open terminal in vertical split
+set splitbelow
+map <C-t> :Term<CR>
 
 nnoremap <silent> <C-B> :NERDTreeToggle<CR>
 
