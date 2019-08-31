@@ -1,0 +1,43 @@
+{
+    "workbench.iconTheme": "material-icon-theme"
+     ,"workbench.editor.enablePreview": false
+    ,"editor.minimap.enabled": false
+    ,"editor.mouseWheelZoom":true
+    ,"window.zoomLevel": 1
+    // ,"workbench.colorTheme": "Monokai"
+    ,"breadcrumbs.enabled": false
+    ,"terminal.integrated.shell.linux": "/bin/zsh"
+    ,"workbench.statusBar.visible": false
+    ,"workbench.activityBar.visible": false
+    ,"workbench.action.toggleFullScreen":true
+    ,"editor.glyphMargin": false
+    ,"editor.folding": false
+   //  ,"editor.scrollbar.vertical": "hidden",
+    ,"editor.hideCursorInOverviewRuler": true
+    ,"editor.overviewRulerBorder": false
+    ,"workbench.editor.tabCloseButton": "off"
+    ,"workbench.editor.tabSizing": "shrink"
+
+    // Fetches experiments to run from a Microsoft online service.
+    ,"workbench.enableExperiments": false
+    ,"workbench.startupEditor": "none"
+    ,"workbench.tips.enabled": false
+
+    ,"window.menuBarVisibility": "toggle"
+
+
+,"macros": {
+   "commentDown": [
+       "workbench.action.toggleActivityBarVisibility",
+       "workbench.action.toggleSidebarVisibility",
+       
+       ]},
+       "editor.scrollbar.horizontal": "hidden",
+       "editor.scrollbar.vertical": "hidden",
+       "editor.suggestSelection": "first",
+       "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+       "extensions.ignoreRecommendations": true,
+       "kite.showWelcomeNotificationOnStartup": false
+
+
+}
