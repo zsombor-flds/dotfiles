@@ -1,3 +1,3 @@
 # dotfiles
 ***
-### Repo to manage custom enviroment config files
+### Repo to sync config between dev machines
